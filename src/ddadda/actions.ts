@@ -1,5 +1,5 @@
 import { AxiosError } from 'axios';
-import { createAsyncAction } from 'typesafe-actions';
+import { createAsyncAction, createAction } from 'typesafe-actions';
 import { defaultDataType } from '../utils/filter';
 
 export const DEFAULT_REQUEST = 'DEFAULT_REQUEST';
@@ -11,3 +11,7 @@ export const defaultAsync = createAsyncAction(DEFAULT_REQUEST, DEFAULT_SUCCESS, 
   defaultDataType,
   AxiosError
 >();
+
+export const SELECT_DIVISION = 'SELECT_DIVISION';
+
+export const selectDivision = createAction(SELECT_DIVISION)();
