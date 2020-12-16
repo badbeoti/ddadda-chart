@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import { defaultData } from './reducers';
+import { defaultData, selectDivision } from './reducers';
 import ddaddaSaga from './sagas';
 import { all } from 'redux-saga/effects';
 
-const rootReducer = combineReducers({ defaultData });
+const rootReducer = combineReducers({ defaultData, selectDivision });
 
 export default rootReducer;
 
