@@ -1,6 +1,7 @@
 import { AxiosError } from 'axios';
 import { createAsyncAction, createAction } from 'typesafe-actions';
 import { defaultDataType } from '../utils/filter';
+import { DivisionItemState } from './types';
 
 export const DEFAULT_REQUEST = 'DEFAULT_REQUEST';
 export const DEFAULT_SUCCESS = 'DEFAULT_SUCCESS';
@@ -14,4 +15,4 @@ export const defaultAsync = createAsyncAction(DEFAULT_REQUEST, DEFAULT_SUCCESS, 
 
 export const SELECT_DIVISION = 'SELECT_DIVISION';
 
-export const selectDivision = createAction(SELECT_DIVISION)();
+export const selectDivision = createAction(SELECT_DIVISION)<DivisionItemState[]>();
