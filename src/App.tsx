@@ -1,24 +1,24 @@
-import React, { useState, useEffect } from 'react';
-import useDefault from './hooks/useDefault';
+import React from 'react';
+import styled from 'styled-components';
 import ButtonList from './components/ButtonList';
 import Canvas from './components/Canvas';
 import './App.css';
 
+const AppBox = styled.div`
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+`;
+
 function App() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        placeContent: 'center',
-        placeItems: 'center',
-        width: '100%',
-        height: '100vh',
-        flexDirection: 'column',
-      }}
-    >
+    <AppBox>
       <Canvas></Canvas>
       <ButtonList></ButtonList>
-    </div>
+    </AppBox>
   );
 }
 

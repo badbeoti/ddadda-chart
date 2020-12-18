@@ -1,5 +1,5 @@
-import React, { useEffect, useState, useRef } from 'react';
-import styled, { css } from 'styled-components';
+import React, { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import { Space, Button } from 'antd';
 import useDivision from '../hooks/useDivision';
 import { divisionArr } from '../utils/filter';
@@ -11,9 +11,8 @@ const ButtonContainer = styled.div`
 
   .ant-space {
     display: flex;
-    justify-content: center;
+    place-content: center;
     justify-items: center;
-    align-content: center;
   }
 `;
 
