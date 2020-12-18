@@ -1,4 +1,4 @@
-import { createReducer } from 'typesafe-actions';
+import { action, createReducer } from 'typesafe-actions';
 import { DEFAULT_REQUEST, DEFAULT_SUCCESS, DEFAULT_FAILURE, SELECT_DIVISION } from './actions';
 import { DefaultState, DefaultAction, DivisionState } from './types';
 import { divisionArr } from '../utils/filter';
@@ -39,10 +39,10 @@ const defaultData = createReducer<DefaultState, DefaultAction>(initialState, {
 });
 
 const selectDivision = createReducer<DivisionState, DefaultAction>(initialDivision, {
-  [SELECT_DIVISION]: (state) => ({
+  [SELECT_DIVISION]: (state, action) => ({
     ...state,
     default: {
-      data: initialDivision.default.data,
+      data: action.payload,
     },
   }),
 });
