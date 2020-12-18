@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# ddadda-chart
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> d3를 사용하여 만든 서울특별시 공공자전거 대여소 정보 그래프입니다.
 
-## Available Scripts
+![capture](https://images.velog.io/images/badbeoti/post/9d9e087e-62b3-4bb6-ad3a-bfe48edd231d/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-18%20230153.png)
 
-In the project directory, you can run:
+### Use skill
 
-### `yarn start`
+- Front
+  - react
+  - redux
+  - redux-saga, typesafe-actions
+  - d3.js
+  - styled-components
+  - antd
+  - typescript
+  - aws Amplify
+- Back
+  - aws S3
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Summary description
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- react와 redux를 활용해 view를 제작했습니다.
+- class 문법을 사용하지 않고, 전부 Hooks로 작성했습니다.
+- typescript를 사용했습니다.
+- front는 aws에 S3를 이용해 배포했습니다.
+- back는 aws EC2(Ubuntu 18.04)를 배포했습니다.
 
-### `yarn test`
+### Guide image
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![capture](https://images.velog.io/images/badbeoti/post/78eca79b-6470-4ea4-8437-0d584181bf3e/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-19%20013030.png)
 
-### `yarn build`
+> Select 기능으로 원하시는 지역만을 선택해 그래프를 만들어 보실 수 있습니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![enter image description here](https://images.velog.io/images/badbeoti/post/621c2163-e304-4c57-a64c-5ceed445db97/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-19%20013107.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+> Sort 기능으로 정렬하여 그래프를 보실 수 있습니다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Velog
 
-### `yarn eject`
+> 그 외 상세한 작업 과정과 여타 후기들은 Velog에 작성했습니다.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- ㅇㅁㄴㅇㅈㅁㄴㅇ
+- ㅁㄴㅇㅁㄴㅇㅁㄴㅇ
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+> Written with [StackEdit](https://stackedit.io/).
