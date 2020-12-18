@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import * as styled from 'styled-components';
+import styled from 'styled-components';
 import { Button } from 'antd';
 import * as d3 from 'd3';
 import { select, Selection } from 'd3-selection';
@@ -9,6 +9,16 @@ import { divisionArr } from '../utils/filter';
 import useDefault from '../hooks/useDefault';
 import useDivision from '../hooks/useDivision';
 import effectFc from '../utils/effectFc';
+
+const ButtonContainer = styled.div`
+  width: 750px;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+
+  margin-bottom: 2rem;
+`;
 
 const canvas = {
   width: 1200,
@@ -166,10 +176,12 @@ function Canvas() {
   return (
     <>
       <svg ref={ref} width={canvas.width} height={canvas.height}></svg>
-      <Button onClick={setAxis}>{axis ? '자전거 수' : '거치대 수'}</Button>
-      <Button onClick={setSelect}>selectTest</Button>
-      <Button onClick={setSort}>sortTest</Button>
-      <Button onClick={setReset}>resetTest</Button>
+      <ButtonContainer>
+        <Button onClick={setAxis}>{axis ? '자전거 수' : '거치대 수'}</Button>
+        <Button onClick={setSelect}>selectTest</Button>
+        <Button onClick={setSort}>sortTest</Button>
+        <Button onClick={setReset}>resetTest</Button>
+      </ButtonContainer>
     </>
   );
 }
