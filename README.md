@@ -2,7 +2,7 @@
 
 > d3를 사용하여 만든 서울특별시 공공자전거 대여소 정보 그래프입니다.
 
-![capture](https://images.velog.io/images/badbeoti/post/9d9e087e-62b3-4bb6-ad3a-bfe48edd231d/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-18%20230153.png)
+![capture](https://images.velog.io/images/badbeoti/post/55b70122-9bd8-4ee6-a2f8-c35d789753be/image.png)
 
 ### Use skill
 
@@ -28,11 +28,11 @@
 
 ### Guide image
 
-![capture](https://images.velog.io/images/badbeoti/post/78eca79b-6470-4ea4-8437-0d584181bf3e/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-19%20013030.png)
+![capture](https://images.velog.io/images/badbeoti/post/184ff868-43a0-464d-8853-494ee24bc820/image.png)
 
 > Select 기능으로 원하시는 지역만을 선택해 그래프를 만들어 보실 수 있습니다.
 
-![enter image description here](https://images.velog.io/images/badbeoti/post/621c2163-e304-4c57-a64c-5ceed445db97/%ED%99%94%EB%A9%B4%20%EC%BA%A1%EC%B2%98%202020-12-19%20013107.png)
+![enter image description here](https://images.velog.io/images/badbeoti/post/4a6d7b22-39cc-466d-a3d7-5260acd2f68d/image.png)
 
 > Sort 기능으로 정렬하여 그래프를 보실 수 있습니다.
 
@@ -40,8 +40,7 @@
 
 > 그 외 상세한 작업 과정과 여타 후기들은 Velog에 작성했습니다.
 
-- ㅇㅁㄴㅇㅈㅁㄴㅇ
-- ㅁㄴㅇㅁㄴㅇㅁㄴㅇ
+- (작성중...)
 
 ---
 
