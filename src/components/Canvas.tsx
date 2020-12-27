@@ -18,6 +18,10 @@ const ButtonContainer = styled.div`
   place-items: center;
 
   margin-bottom: 2rem;
+
+  .ant-btn {
+    margin-right: 2rem;
+  }
 `;
 
 const canvas = {
@@ -178,9 +182,9 @@ function Canvas() {
       <svg ref={ref} width={canvas.width} height={canvas.height}></svg>
       <ButtonContainer>
         <Button onClick={setAxis}>{axis ? '자전거 수' : '거치대 수'}</Button>
-        <Button onClick={setSelect}>selectTest</Button>
-        <Button onClick={setSort}>sortTest</Button>
-        <Button onClick={setReset}>resetTest</Button>
+        <Button onClick={setSelect}>selectChart</Button>
+        <Button onClick={setSort}>sortChart</Button>
+        <Button onClick={setReset}>resetChart</Button>
       </ButtonContainer>
     </>
   );
